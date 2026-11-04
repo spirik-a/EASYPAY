@@ -55,6 +55,18 @@
         font-family: "Inter", sans-serif;
         background-color: #f8fafc;
         color: #0f172a;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      input,
+      textarea,
+      select {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
       }
       .gradient-text-emerald {
         background: linear-gradient(
@@ -807,350 +819,91 @@
                   <i class="fa-solid fa-check text-emerald-600"></i> Free
                   Physical Corporate Card
                 </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-check text-emerald-600"></i> Standard FX
-                  Rates
-                </li>
-                <li class="flex items-center gap-3 text-slate-400">
-                  <i class="fa-solid fa-xmark text-slate-400"></i> AI Expense
-                  Auto-tagging
-                </li>
               </ul>
-            </div>
-            <button
-              class="w-full py-3.5 rounded-xl bg-white border border-slate-200 hover:bg-slate-100 text-slate-800 font-bold text-xs transition-all shadow-sm"
-            >
-              Create Free Account
-            </button>
-          </div>
-
-          <!-- Plan 2: Business Pro (HIGHLIGHTED) -->
-          <div
-            class="bg-gradient-to-b from-slate-900 to-slate-950 text-white rounded-3xl p-8 flex flex-col justify-between shadow-xl relative scale-105 border border-slate-800"
-          >
-            <div
-              class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-400 text-slate-950 text-[11px] font-extrabold uppercase px-4 py-1 rounded-full shadow-md tracking-wider"
-            >
-              Recommended for Teams
-            </div>
-            <div>
-              <h3 class="text-xl font-bold text-white mb-1">Business Scale</h3>
-              <p class="text-xs text-slate-400 mb-6">
-                Designed for growing mid-sized companies.
-              </p>
-              <div class="mb-6">
-                <span
-                  class="text-4xl font-extrabold text-white"
-                  id="price-business"
-                  >$49</span
-                >
-                <span class="text-slate-400 text-xs" id="period-business"
-                  >/ month</span
-                >
-              </div>
-              <ul class="space-y-3 text-xs text-slate-300 mb-8 font-medium">
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-check text-emerald-400"></i> Unlimited
-                  Multi-currency Vaults
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-check text-emerald-400"></i> 20 Virtual
-                  Employee Cards
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-check text-emerald-400"></i> Zero-markup
-                  Wholesale FX
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-check text-emerald-400"></i> Automated
-                  QuickBooks & Xero Sync
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-check text-emerald-400"></i> 24/7
-                  Priority Support
-                </li>
-              </ul>
-            </div>
-            <button
-              class="w-full py-3.5 rounded-xl gradient-btn-emerald text-white font-bold text-xs shadow-lg shadow-emerald-600/30"
-            >
-              Start 14-Day Free Trial
-            </button>
-          </div>
-
-          <!-- Plan 3: Enterprise -->
-          <div
-            class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between hover:border-slate-300 transition-all"
-          >
-            <div>
-              <h3 class="text-xl font-bold text-slate-900 mb-1">
-                Enterprise Global
-              </h3>
-              <p class="text-xs text-slate-500 mb-6">
-                For large corporations needing custom SLA.
-              </p>
-              <div class="mb-6">
-                <span
-                  class="text-4xl font-extrabold text-slate-900"
-                  id="price-enterprise"
-                  >$199</span
-                >
-                <span class="text-slate-500 text-xs" id="period-enterprise"
-                  >/ month</span
-                >
-              </div>
-              <ul class="space-y-3 text-xs text-slate-700 mb-8 font-medium">
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-check text-emerald-600"></i> Everything
-                  in Business Scale
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-check text-emerald-600"></i> Custom ERP
-                  Integration (SAP, Oracle)
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-check text-emerald-600"></i> Dedicated
-                  Account Director
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-check text-emerald-600"></i> Tailored
-                  Treasury Management
-                </li>
-              </ul>
-            </div>
-            <button
-              class="w-full py-3.5 rounded-xl bg-white border border-slate-200 hover:bg-slate-100 text-slate-800 font-bold text-xs transition-all shadow-sm"
-            >
-              Contact Enterprise Sales
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ ACCORDION SECTION -->
-    <section id="faq" class="py-20 bg-slate-50 border-t border-slate-200/80">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 space-y-3">
-          <span
-            class="text-xs font-bold uppercase tracking-widest text-emerald-600"
-            >Got Questions?</span
-          >
-          <h2 class="text-3xl font-extrabold text-slate-900">
-            Frequently Asked Questions
-          </h2>
-        </div>
-
-        <div class="space-y-4">
-          <!-- FAQ Item 1 -->
-          <div
-            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm"
-          >
-            <button
-              onclick="toggleFaq(1)"
-              class="w-full px-6 py-4 text-left flex justify-between items-center font-bold text-slate-900 text-sm focus:outline-none"
-            >
-              <span>How does EASYPay safeguard company funds?</span>
-              <i
-                id="faq-icon-1"
-                class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"
-              ></i>
-            </button>
-            <div
-              id="faq-content-1"
-              class="hidden px-6 pb-4 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3"
-            >
-              EASYPay operates under strict regulatory oversight. Client funds
-              are safeguarded in ring-fenced tier-1 banking institutions (such
-              as J.P. Morgan and Barclays) and are never used for corporate
-              lending.
-            </div>
-          </div>
-
-          <!-- FAQ Item 2 -->
-          <div
-            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm"
-          >
-            <button
-              onclick="toggleFaq(2)"
-              class="w-full px-6 py-4 text-left flex justify-between items-center font-bold text-slate-900 text-sm focus:outline-none"
-            >
-              <span
-                >Can I issue virtual cards to remote employees instantly?</span
-              >
-              <i
-                id="faq-icon-2"
-                class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"
-              ></i>
-            </button>
-            <div
-              id="faq-content-2"
-              class="hidden px-6 pb-4 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3"
-            >
-              Yes! You can generate virtual cards directly from your EASYPay
-              admin panel in under 10 seconds, assign individual spending
-              limits, and send them to employees via Apple Pay / Google Wallet.
-            </div>
-          </div>
-
-          <!-- FAQ Item 3 -->
-          <div
-            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm"
-          >
-            <button
-              onclick="toggleFaq(3)"
-              class="w-full px-6 py-4 text-left flex justify-between items-center font-bold text-slate-900 text-sm focus:outline-none"
-            >
-              <span
-                >Are there any hidden markups on international wire
-                transfers?</span
-              >
-              <i
-                id="faq-icon-3"
-                class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"
-              ></i>
-            </button>
-            <div
-              id="faq-content-3"
-              class="hidden px-6 pb-4 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3"
-            >
-              No hidden margins. EASYPay utilizes interbank mid-market exchange
-              rates with a transparent, fixed fee starting at 0.2% per
-              cross-border transaction.
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER SECTION -->
-    <footer id="security" class="bg-slate-900 text-white pt-16 pb-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          <div>
-            <div class="flex items-center gap-3 mb-4">
-              <div
-                class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center font-extrabold text-white"
-              >
-                N
-              </div>
-              <span class="font-extrabold text-xl">EASYPay</span>
-            </div>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Modern financial technology infrastructure engineered for
-              enterprise speed and compliance.
-            </p>
-          </div>
-
-          <div>
-            <h4
-              class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-4"
-            >
-              Solutions
-            </h4>
-            <ul class="space-y-2 text-xs text-slate-400">
-              <li>
-                <a href="#features" class="hover:text-white transition-colors"
-                  >Corporate Cards</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#interactive-simulator"
-                  class="hover:text-white transition-colors"
-                  >Cross-Border FX</a
-                >
-              </li>
-              <li>
-                <a href="#features" class="hover:text-white transition-colors"
-                  >Treasury Management</a
-                >
-              </li>
-              <li>
-                <a href="#pricing" class="hover:text-white transition-colors"
-                  >Accounting Sync</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4
-              class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-4"
-            >
-              Compliance & Badges
-            </h4>
-            <div class="space-y-2 text-xs text-slate-400">
-              <div class="flex items-center gap-2">
-                <i class="fa-solid fa-shield-check text-emerald-400"></i>
-                <span>PCI-DSS Level 1 Certified</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="fa-solid fa-lock text-emerald-400"></i>
-                <span>SOC2 Type II Audited</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="fa-solid fa-building-columns text-emerald-400"></i>
-                <span>FINRA / FinCEN Regulated</span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h4
-              class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-4"
-            >
-              Portfolio Link
-            </h4>
-            <div
-              class="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700 text-xs text-slate-300"
-            >
-              <p>
-                <i class="fa-brands fa-github text-emerald-400 mr-1.5"></i>
-                Ready for GitHub Pages hosting & live presentation.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4"
-        >
-          <p>&copy; 2026 EASYPay Financial Inc. All rights reserved.</p>
-          <div class="flex gap-6">
-            <a href="#" class="hover:text-slate-300">Privacy Policy</a>
-            <a href="#" class="hover:text-slate-300">Terms of Service</a>
-            <a href="#" class="hover:text-slate-300">Security Architecture</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- INTERACTIVE SCRIPT LOGIC -->
+    <!-- Scripts (Simulation logic + Advanced Code Protection) -->
     <script>
-      // 1. Mobile Menu Toggle
-      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-      mobileMenuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
+      /* Посилений захист від інструментів розробника та перегляду коду */
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+      document.addEventListener(
+        "keydown",
+        (e) => {
+          const key = e.key.toLowerCase();
+          const code = e.code;
+
+          if (key === "f12" || code === "F12") {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          }
+
+          if (e.ctrlKey || e.metaKey) {
+            if (
+              key === "u" ||
+              code === "KeyU" ||
+              key === "s" ||
+              code === "KeyS" ||
+              key === "a" ||
+              code === "KeyA"
+            ) {
+              e.preventDefault();
+              e.stopPropagation();
+              return false;
+            }
+
+            if (
+              e.shiftKey &&
+              (key === "i" ||
+                code === "KeyI" ||
+                key === "j" ||
+                code === "KeyJ" ||
+                key === "c" ||
+                code === "KeyC")
+            ) {
+              e.preventDefault();
+              e.stopPropagation();
+              return false;
+            }
+          }
+        },
+        true
+      );
+
+      document.addEventListener("copy", (e) => e.preventDefault());
+      document.addEventListener("cut", (e) => e.preventDefault());
+      document.addEventListener("selectstart", (e) => {
+        if (
+          e.target.tagName !== "INPUT" &&
+          e.target.tagName !== "TEXTAREA" &&
+          e.target.tagName !== "SELECT"
+        ) {
+          e.preventDefault();
+        }
       });
 
-      // 2. Interactive Calculator Logic
+      setInterval(() => {
+        const widthThreshold = window.outerWidth - window.innerWidth > 160;
+        const heightThreshold = window.outerHeight - window.innerHeight > 160;
+        if (widthThreshold || heightThreshold) {
+          document.body.innerHTML =
+            '<div style="display:flex;align-items:center;justify-content:center;height:100vh;background:#0f172a;color:#fff;font-family:sans-serif;font-size:1.5rem;text-align:center;">Інструменти розробника заблоковані на цій сторінці.</div>';
+        }
+      }, 1000);
+
+      /* Летючі перемикачі та логіка калькулятора */
       let calcMode = "fx";
-      const exchangeRates = {
-        "USD-EUR": 0.92,
-        "USD-GBP": 0.79,
-        "EUR-USD": 1.09,
-        "EUR-GBP": 0.86,
-        "GBP-USD": 1.27,
-        "GBP-EUR": 1.16,
-      };
+      let isAnnual = false;
 
       function switchCalcMode(mode) {
         calcMode = mode;
         const fxBtn = document.getElementById("mode-fx-btn");
         const savingsBtn = document.getElementById("mode-savings-btn");
-
         if (mode === "fx") {
           fxBtn.className =
             "flex-1 py-2 text-xs sm:text-sm font-bold rounded-lg bg-white text-slate-900 shadow-sm transition-all";
@@ -1169,106 +922,66 @@
         const amount = parseFloat(
           document.getElementById("transfer-range").value
         );
-        document.getElementById("amount-display").innerText =
+        document.getElementById("amount-display").textContent =
           "$" + amount.toLocaleString();
 
         const from = document.getElementById("currency-from").value;
         const to = document.getElementById("currency-to").value;
 
-        let rate = 1.0;
-        if (from !== to) {
-          rate = exchangeRates[`${from}-${to}`] || 0.92;
-        }
+        let rate = 0.92;
+        if (from === "USD" && to === "GBP") rate = 0.79;
+        if (from === "EUR" && to === "USD") rate = 1.08;
+        if (from === "EUR" && to === "GBP") rate = 0.86;
+        if (from === "GBP" && to === "USD") rate = 1.27;
+        if (from === "GBP" && to === "EUR") rate = 1.16;
+        if (from === to) rate = 1.0;
 
         document.getElementById(
           "fx-rate-badge"
-        ).innerText = `1 ${from} = ${rate} ${to}`;
+        ).textContent = `1 ${from} = ${rate} ${to}`;
 
         const converted = amount * rate;
-        const currencySymbol = to === "EUR" ? "€" : to === "GBP" ? "£" : "$";
-        document.getElementById(
-          "converted-total"
-        ).innerText = `${currencySymbol}${converted.toLocaleString(undefined, {
-          minimumFractionDigits: 2,
-          maximumFractionDigits: 2,
-        })}`;
+        const symbol = to === "EUR" ? "€" : to === "GBP" ? "£" : "$";
+        document.getElementById("converted-total").textContent =
+          symbol +
+          converted.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          });
 
-        // Fee calculations
         const novapayFee = amount * 0.002;
-        const traditionalFee = amount * 0.035;
-        const savings = traditionalFee - novapayFee;
+        const tradFee = amount * 0.035;
+        const savings = tradFee - novapayFee;
 
-        document.getElementById(
-          "fee-novapay"
-        ).innerText = `$${novapayFee.toLocaleString(undefined, {
-          minimumFractionDigits: 2,
-        })}`;
-        document.getElementById(
-          "fee-traditional"
-        ).innerText = `$${traditionalFee.toLocaleString(undefined, {
-          minimumFractionDigits: 2,
-        })}`;
-        document.getElementById(
-          "savings-val"
-        ).innerText = `$${savings.toLocaleString(undefined, {
-          minimumFractionDigits: 2,
-        })}`;
+        document.getElementById("fee-novapay").textContent =
+          "$" + novapayFee.toFixed(2);
+        document.getElementById("fee-traditional").textContent =
+          "$" + tradFee.toFixed(2);
+        document.getElementById("savings-val").textContent =
+          "$" + savings.toFixed(2);
       }
 
-      // 3. Pricing Toggle
-      let isAnnual = false;
       function toggleBilling() {
         isAnnual = !isAnnual;
         const dot = document.getElementById("toggle-billing-dot");
-        const monthlyLabel = document.getElementById("billing-monthly-label");
-        const annualLabel = document.getElementById("billing-annual-label");
-
-        const priceBusiness = document.getElementById("price-business");
-        const periodBusiness = document.getElementById("period-business");
-        const priceEnterprise = document.getElementById("price-enterprise");
-        const periodEnterprise = document.getElementById("period-enterprise");
+        const mLabel = document.getElementById("billing-monthly-label");
+        const aLabel = document.getElementById("billing-annual-label");
 
         if (isAnnual) {
-          dot.classList.remove("translate-x-0");
-          dot.classList.add("translate-x-6");
-          monthlyLabel.classList.replace("text-slate-900", "text-slate-500");
-          annualLabel.classList.replace("text-slate-500", "text-slate-900");
-
-          priceBusiness.innerText = "$39";
-          periodBusiness.innerText = "/ month (billed annually)";
-          priceEnterprise.innerText = "$159";
-          periodEnterprise.innerText = "/ month (billed annually)";
+          dot.style.transform = "translateX(24px)";
+          mLabel.className = "text-sm font-medium text-slate-500";
+          aLabel.className =
+            "text-sm font-bold text-slate-900 flex items-center gap-1.5";
         } else {
-          dot.classList.remove("translate-x-6");
-          dot.classList.add("translate-x-0");
-          annualLabel.classList.replace("text-slate-900", "text-slate-500");
-          monthlyLabel.classList.replace("text-slate-500", "text-slate-900");
-
-          priceBusiness.innerText = "$49";
-          periodBusiness.innerText = "/ month";
-          priceEnterprise.innerText = "$199";
-          periodEnterprise.innerText = "/ month";
+          dot.style.transform = "translateX(0px)";
+          mLabel.className = "text-sm font-bold text-slate-900";
+          aLabel.className =
+            "text-sm font-medium text-slate-500 flex items-center gap-1.5";
         }
       }
 
-      // 4. FAQ Accordion Toggle
-      function toggleFaq(id) {
-        const content = document.getElementById(`faq-content-${id}`);
-        const icon = document.getElementById(`faq-icon-${id}`);
-
-        if (content.classList.contains("hidden")) {
-          content.classList.remove("hidden");
-          icon.classList.add("rotate-180");
-        } else {
-          content.classList.add("hidden");
-          icon.classList.remove("rotate-180");
-        }
-      }
-
-      // Initialize Calculator
-      window.onload = function () {
-        updateCalculator();
-      };
+      // Ініціалізація при завантаженні
+      updateCalculator();
     </script>
   </body>
 </html>
